@@ -5,6 +5,10 @@ cmake_minimum_required(VERSION 3.7.2)
 #set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_BUILD_TYPE Release)
 
+# nvidia does not work with newer gcc
+set(CMAKE_C_COMPILER "gcc-6")
+set(CMAKE_CXX_COMPILER "g++-6")
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 option(USE_CPU_XENONCAT "Use XENONCAT (CPU)" ON)
