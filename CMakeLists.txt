@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.7.2)
 
 # Build configuration selection
 #set(CMAKE_BUILD_TYPE Debug)
-set(CMAKE_BUILD_TYPE Release)
+#set(CMAKE_BUILD_TYPE Release)
 
 # nvidia does not work with newer gcc
 set(CMAKE_C_COMPILER "gcc-6")
